@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tranquil</string>
+    <string name="resend_code">Resend Code</string>
+
+    <string name="happy_feeling">You are feeling Happy</string>
+
+    <string name="angry_message">You are feeling Angry</string>
+    <string name="frustrated_message">You are feeling frustrated</string>
+    <string name="sad_message">You are feeling Sad</string>
+    <string name="stressed_feeling">You are feeling stressed</string>
+    <string name="positive_feeling">You are feeling positive</string>
+    <string name="feeling_image">feeling_%s</string>
+</resources>
