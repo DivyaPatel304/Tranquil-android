@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
 
@@ -16,6 +17,17 @@ class OTP : AppCompatActivity() {
         verifyButton.setOnClickListener {
             val intent = Intent(this, Feeling::class.java)
             startActivity(intent)
+        }
+
+        // Retrieve the email from the intent extras
+        val email = intent.getStringExtra("email")
+
+        // Now you have the email and can use it as needed
+        if (email != null) {
+            // You can display the email or use it for any other purpose
+            // For example, you could set it as a text for a TextView
+            val emailTextView = findViewById<TextView>(R.id.editTextTextEmailAddress)
+            emailTextView.text = email
         }
     }
 
