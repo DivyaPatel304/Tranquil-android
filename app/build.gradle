@@ -2,8 +2,13 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+apply plugin: 'kotlin-android'
 
 android {
+
+    viewBinding {
+        enabled = true
+    }
     namespace 'com.mdev.tranquil'
     compileSdk 33
 
@@ -33,6 +38,13 @@ android {
 }
 
 dependencies {
+
+    implementation 'com.google.code.gson:gson:2.8.8' // For JSON parsing
+    implementation 'com.github.bumptech.glide:glide:4.12.0' // For image loading
+    implementation 'androidx.recyclerview:recyclerview:1.2.1' // For RecyclerView
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1' // Add this line for OkHttp
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

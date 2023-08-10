@@ -15,7 +15,7 @@ class Feeling : AppCompatActivity() {
 
         angryButton.setOnClickListener {
             val message = getString(R.string.angry_message)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Angry")
             intent.putExtra("image", R.drawable.angry)
             startActivity(intent)
@@ -25,7 +25,7 @@ class Feeling : AppCompatActivity() {
 
         frustratedButton.setOnClickListener {
             val message = getString(R.string.frustrated_message)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Frustrated")
             intent.putExtra("image", R.drawable.frustrated)
             startActivity(intent)
@@ -34,7 +34,7 @@ class Feeling : AppCompatActivity() {
         val sadButton = findViewById<Button>(R.id.sad_Button)
         sadButton.setOnClickListener {
             val message = getString(R.string.sad_message)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Sad")
             intent.putExtra("image", R.drawable.sad)
             startActivity(intent)
@@ -43,7 +43,7 @@ class Feeling : AppCompatActivity() {
         val happyButton = findViewById<Button>(R.id.happyButton)
         happyButton.setOnClickListener {
             val message = getString(R.string.happy_feeling)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Happy")
             intent.putExtra("image", R.drawable.happy)
             startActivity(intent)
@@ -52,7 +52,7 @@ class Feeling : AppCompatActivity() {
         val stressedButton = findViewById<Button>(R.id.stressedButton)
         stressedButton.setOnClickListener {
             val message = getString(R.string.stressed_feeling)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Stressed")
             intent.putExtra("image", R.drawable.stressed)
             startActivity(intent)
@@ -61,7 +61,7 @@ class Feeling : AppCompatActivity() {
         val positiveButton = findViewById<Button>(R.id.positiveButton)
         positiveButton.setOnClickListener {
             val message = getString(R.string.positive_feeling)
-            val intent = Intent(this, Result::class.java)
+            val intent = Intent(this, YouTubeListActivity::class.java)
             intent.putExtra("feeling", "Positive")
             intent.putExtra("image", R.drawable.positive)
             startActivity(intent)
